@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="10.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="hibernate.model.Strategy">
+    <void property="id">
+     <int>3</int>
+    </void>
+    <void property="strategy">
+     <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

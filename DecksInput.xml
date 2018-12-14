@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="10.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="hibernate.model.Deck" id="Deck0">
+    <void property="id">
+     <int>4</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>B.Song,the Underground Mayor</string>
+    </void>
+    <void property="owner">
+     <object class="hibernate.model.Player" id="Player0">
+      <void property="decks">
+       <void method="add">
+        <object idref="Deck0"/>
+       </void>
+      </void>
+      <void property="id">
+       <int>6</int>
+      </void>
+      <void property="name">
+       <string>Emilia</string>
+      </void>
+      <void property="surname">
+       <string>Jurkowska</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="hibernate.model.Deck" id="Deck1">
+    <void property="id">
+     <int>5</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>Batonvert Emberharbor&apos;s Tentacle</string>
+    </void>
+    <void property="owner">
+     <object class="hibernate.model.Player" id="Player1">
+      <void property="decks">
+       <void method="add">
+        <object idref="Deck1"/>
+       </void>
+      </void>
+      <void property="id">
+       <int>7</int>
+      </void>
+      <void property="name">
+       <string>Michał</string>
+      </void>
+      <void property="surname">
+       <string>Komisarek-2087353829</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

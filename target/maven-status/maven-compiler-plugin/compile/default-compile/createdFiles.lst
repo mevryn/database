@@ -1,0 +1,6 @@
+Main.class
+hibernate/model/Deck.class
+hibernate/model/Tournament.class
+hibernate/model/Player.class
+DatabaseManager.class
+hibernate/model/Match.class
