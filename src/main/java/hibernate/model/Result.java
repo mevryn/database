@@ -7,12 +7,20 @@ import javax.persistence.*;
 public class Result {
     @Id @GeneratedValue
     @Column(name = "id")
-    int id;
+    private int id;
     @Column(name = "Winner")
-    String winner;
+    private String winner;
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "id=" + id +
+                ", winner='" + winner + '\'' +
+                '}';
     }
 
     public void setId(int id) {
@@ -30,7 +38,7 @@ public class Result {
         this.winner = winner;
     }
 
-    public void setWinner(Player winner) {
-        this.winner = winner.getSurname();
+    public void setWinner(String winner) {
+        this.winner = winner;
     }
 }

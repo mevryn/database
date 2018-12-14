@@ -11,7 +11,19 @@ import java.io.Serializable;
 @Table(name = "DECK")
 public class Deck implements Serializable {
 
+    public Strategy getStrategy() {
+        return strategy;
+    }
 
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "id=" + id +
+                ", nameOfDeck='" + nameOfDeck + '\'' +
+                ", strategy=" + strategy +
+                ", owner=" + owner +
+                '}';
+    }
 
     @Id @GeneratedValue
     @Column(name="id")

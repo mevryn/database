@@ -1,6 +1,12 @@
+hibernate/model/Player.class
+hibernate/queries/Queries.class
+hibernate/temp/PreparedMatch.class
 Main.class
 hibernate/model/Deck.class
-hibernate/model/Tournament.class
-hibernate/model/Player.class
+DatabaseManager$3.class
+DatabaseManager$1.class
+hibernate/model/Strategy.class
 DatabaseManager.class
+DatabaseManager$2.class
 hibernate/model/Match.class
+hibernate/model/Result.class

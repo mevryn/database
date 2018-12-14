@@ -2,6 +2,7 @@ import hibernate.model.Match;
 import hibernate.model.Player;
 import hibernate.model.Result;
 import hibernate.queries.Queries;
+import org.hibernate.validator.constraints.br.TituloEleitoral;
 import org.junit.Test;
 
 import javax.persistence.EntityManager;
@@ -11,6 +12,7 @@ import javax.xml.crypto.Data;
 
 import java.time.ZonedDateTime;
 
+import static java.lang.System.out;
 import static org.junit.Assert.assertEquals;
 
 public class DatabaseManagerTest {
@@ -25,27 +27,30 @@ public class DatabaseManagerTest {
             queries = new Queries(entityManager);
             manager = new DatabaseManager(entityManager,queries);
     }
+
     @Test
-    public void saveToXML() throws Exception{
+    public void loadStrategiesFromJSON() throws Exception {
         entityManager.getTransaction().begin();
-        entityManager.persist(new Match(entityManager.find(Player.class,1),entityManager.find(Player.class,2),new Result("Jurkowska"),ZonedDateTime.now()));
-        manager.saveDatabase();
-        entityManager.getTransaction().commit();
+        manager.loadStrategiesFromJSON("StrategiesInput.json");
+        assertEquals(1,queries.findAllStrategies().size());
+        entityManager.close();
     }
     @Test
-    public void loadFromXML()throws Exception {
+    public void loadMatchesFromJSON() throws Exception{
         entityManager.getTransaction().begin();
-        manager.loadPlayersFromXML("PlayersInput.xml");
-        manager.loadDecksFromXML("DecksInput.xml");
-        manager.loadResultsFromXML("ResultsInput.xml");
-        manager.loadMatchesFromXML("MatchesInput.xml");
-        entityManager.getTransaction().commit();
-        assertEquals(154, queries.findAllPlayers().size());
-        assertEquals(2,queries.findAllDecks().size());
-         assertEquals(1,queries.findAllResults().size());
+        manager.loadMatchesFromJSON("MatchesInput.json");
         assertEquals(1,queries.findAllMatches().size());
         entityManager.close();
     }
-
-
+    @Test
+    public void loadDecksFromJSON() throws Exception {
+        entityManager.getTransaction().begin();
+        manager.loadDecksFromJSON("DecksInput.json");
+        assertEquals(1,queries.findAllStrategies().size());
+        entityManager.close();
+    }
+    @Test
+    public void getResultsFromDatabase(){
+        out.println(queries.findAllResults());
+    }
 }

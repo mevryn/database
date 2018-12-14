@@ -12,6 +12,14 @@ public class Strategy {
     @Column(name = "strategy")
     private String strategy;
 
+    @Override
+    public String toString() {
+        return "Strategy{" +
+                "id=" + id +
+                ", strategy='" + strategy + '\'' +
+                '}';
+    }
+
     public int getId() {
         return id;
     }
@@ -20,11 +28,12 @@ public class Strategy {
         this.id = id;
     }
 
+    public void setStrategy(String strategy) {
+        this.strategy = strategy;
+    }
+
     public String getStrategy() {
         return strategy;
     }
 
-    public void setStrategy(String strategy) {
-        this.strategy = strategy;
-    }
 }

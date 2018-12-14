@@ -1,18 +1,27 @@
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 import hibernate.model.*;
 import hibernate.queries.Queries;
 import hibernate.temp.PreparedMatch;
+import jdk.nashorn.internal.objects.Global;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONArray;
 
 import javax.persistence.EntityManager;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.*;
+import java.lang.reflect.Type;
 import java.time.Duration;
 import java.time.Period;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.lang.System.out;
 
 public class DatabaseManager {
 
@@ -198,7 +207,52 @@ public class DatabaseManager {
 
     }
     public void loadStrategiesFromJSON(String filePath) throws Exception{
-         Gson gson = new Gson();
+        Gson gson =new Gson();
+        JsonReader reader = new JsonReader(new FileReader(filePath));
+        Type targetClassType = new TypeToken<ArrayList<Strategy>>(){}.getType();
+        ArrayList<Strategy> strategies = gson.fromJson(reader,targetClassType);
+        for (Strategy strategy:strategies){
+            entityManager.merge(strategy);
+        }
+        out.println(queries.findAllStrategies());
+    }
+    public void loadMatchesFromJSON(String filePath) throws Exception {
+        Gson gson = new Gson();
+        JsonReader reader = new JsonReader(new FileReader(filePath));
+        Type targetClassType = new TypeToken<ArrayList<PreparedMatch>>() {
+        }.getType();
+        ArrayList<PreparedMatch> preparedMatches = gson.fromJson(reader, targetClassType);
+        List<Match> matches = new ArrayList<>();
+        for(PreparedMatch preparedMatch: preparedMatches){
+            entityManager.merge(preparedMatch.getResult());
+        }
+        entityManager.flush();
+        out.println(queries.findAllResults());
+        for (PreparedMatch preparedMatch : preparedMatches) {
+            Match match = new Match();
+            match.setId(preparedMatch.getId());
+            match.setPlayer(preparedMatch.getPlayer());
+            match.setOpponent(preparedMatch.getOpponent());
+            match.setResult(preparedMatch.getResult());
+            if (preparedMatch.getDateTime() == null) {
+                match.setDateTime(ZonedDateTime.now().minus(Period.ofDays(3).minus(Period.ofMonths(4))));
+            } else {
+                match.setDateTime(preparedMatch.timeToZoned());
+            }
+            matches.add(match);
+        }
 
+        for (Match match : matches) {
+            entityManager.merge(match);
+        }
+    }
+    public void loadDecksFromJSON(String filePath) throws  Exception{
+        Gson gson =new Gson();
+        JsonReader reader = new JsonReader(new FileReader(filePath));
+        Type targetClassType = new TypeToken<ArrayList<Deck>>(){}.getType();
+        ArrayList<Deck> decks = gson.fromJson(reader,targetClassType);
+        for (Deck deck:decks){
+            entityManager.merge(deck);
+        }
     }
 }

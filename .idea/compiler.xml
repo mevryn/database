@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="database" />
+        <module name="keyforge-database" />
         <module name="keyforgedatabase" />
       </profile>
     </annotationProcessing>

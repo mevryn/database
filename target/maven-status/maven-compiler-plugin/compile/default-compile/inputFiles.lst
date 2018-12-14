@@ -1,6 +1,9 @@
-/home/mev/Programowanie/keyforgedatabase/src/main/java/hibernate/model/Tournament.java
-/home/mev/Programowanie/keyforgedatabase/src/main/java/hibernate/model/Deck.java
-/home/mev/Programowanie/keyforgedatabase/src/main/java/hibernate/model/Match.java
-/home/mev/Programowanie/keyforgedatabase/src/main/java/Main.java
-/home/mev/Programowanie/keyforgedatabase/src/main/java/DatabaseManager.java
-/home/mev/Programowanie/keyforgedatabase/src/main/java/hibernate/model/Player.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/model/Result.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/Main.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/DatabaseManager.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/model/Strategy.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/model/Deck.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/temp/PreparedMatch.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/queries/Queries.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/model/Player.java
+/home/students/s434723/Documents/PracowniaProgramowania/database/src/main/java/hibernate/model/Match.java
