@@ -6,8 +6,6 @@ import com.google.gson.stream.JsonReader;
 import hibernate.model.*;
 import hibernate.queries.Queries;
 import hibernate.temp.PreparedMatch;
-import jdk.nashorn.internal.objects.Global;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONArray;
 
 import javax.persistence.EntityManager;
@@ -255,4 +253,14 @@ public class DatabaseManager {
             entityManager.merge(deck);
         }
     }
+          public void loadPlayersFromJSON(String filePath) throws  Exception {
+          Gson gson = new Gson();
+          JsonReader reader = new JsonReader(new FileReader(filePath));
+          Type targetClassType = new TypeToken<ArrayList<Player>>() {
+          }.getType();
+          ArrayList<Player> players = gson.fromJson(reader, targetClassType);
+          for (Player player : players) {
+              entityManager.merge(player);
+          }
+      }
 }

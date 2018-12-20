@@ -32,7 +32,7 @@ public class Match implements Serializable {
         this.parsedDateTime = parsedDateTime;
     }
 
-    private LocalDateTime parsedDateTime;
+    transient private LocalDateTime parsedDateTime;
 
     public ZonedDateTime getDateTime() {
         return dateTime;

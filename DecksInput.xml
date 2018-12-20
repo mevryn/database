@@ -2,48 +2,48 @@
 <java version="10.0.2" class="java.beans.XMLDecoder">
  <object class="java.util.ArrayList">
   <void method="add">
-   <object class="hibernate.model.Deck" id="Deck0">
+   <object class="hibernate.model.Deck">
     <void property="id">
-     <int>4</int>
+     <int>155</int>
     </void>
     <void property="nameOfDeck">
      <string>B.Song,the Underground Mayor</string>
     </void>
     <void property="owner">
-     <object class="hibernate.model.Player" id="Player0">
-      <void property="decks">
-       <void method="add">
-        <object idref="Deck0"/>
-       </void>
-      </void>
+     <object class="hibernate.model.Player">
       <void property="id">
        <int>6</int>
       </void>
       <void property="name">
-       <string>Emilia</string>
+       <string>Emilia-1891856204</string>
       </void>
       <void property="surname">
        <string>Jurkowska</string>
       </void>
      </object>
     </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>52</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+      </void>
+     </object>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="hibernate.model.Deck" id="Deck1">
+   <object class="hibernate.model.Deck">
     <void property="id">
-     <int>5</int>
+     <int>156</int>
     </void>
     <void property="nameOfDeck">
      <string>Batonvert Emberharbor&apos;s Tentacle</string>
     </void>
     <void property="owner">
-     <object class="hibernate.model.Player" id="Player1">
-      <void property="decks">
-       <void method="add">
-        <object idref="Deck1"/>
-       </void>
-      </void>
+     <object class="hibernate.model.Player" id="Player0">
       <void property="id">
        <int>7</int>
       </void>
@@ -52,6 +52,108 @@
       </void>
       <void property="surname">
        <string>Komisarek-2087353829</string>
+      </void>
+     </object>
+    </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>53</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="hibernate.model.Deck">
+    <void property="id">
+     <int>157</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>Batonvert Emberharbor&apos;s Tentacle</string>
+    </void>
+    <void property="owner">
+     <object idref="Player0"/>
+    </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>54</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="hibernate.model.Deck">
+    <void property="id">
+     <int>158</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>Batonvert Emberharbor&apos;s Tentacle</string>
+    </void>
+    <void property="owner">
+     <object idref="Player0"/>
+    </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>55</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="hibernate.model.Deck">
+    <void property="id">
+     <int>159</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>Batonvert Emberharbor&apos;s Tentacle</string>
+    </void>
+    <void property="owner">
+     <object idref="Player0"/>
+    </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>56</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="hibernate.model.Deck">
+    <void property="id">
+     <int>160</int>
+    </void>
+    <void property="nameOfDeck">
+     <string>Batonvert Emberharbor&apos;s Tentacle</string>
+    </void>
+    <void property="owner">
+     <object idref="Player0"/>
+    </void>
+    <void property="strategy">
+     <object class="hibernate.model.Strategy">
+      <void property="id">
+       <int>57</int>
+      </void>
+      <void property="strategy">
+       <string>An aggro deck or aggressive deck, also known as a rush deck, is a deck that takes an &apos;aggressive&apos; approach of dealing damage to the opponent as quickly as possible</string>
       </void>
      </object>
     </void>

@@ -7,7 +7,8 @@ import javax.persistence.*;
 @Entity
 @Table(name="STRATEGY")
 public class Strategy {
-    @Id @GeneratedValue
+    @Id @GeneratedValue(generator = "gen")
+    @SequenceGenerator(name = "gen", sequenceName = "author_seq")
     private int id;
     @Column(name = "strategy")
     private String strategy;

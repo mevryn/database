@@ -30,7 +30,7 @@ public class Deck implements Serializable {
     private int id;
     @Column(name="nameofdeck")
     private String nameOfDeck;
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="Strategy",referencedColumnName = "id")
     private Strategy strategy;
 

@@ -1,12 +1,13 @@
 hibernate/model/Player.class
-hibernate/queries/Queries.class
 hibernate/temp/PreparedMatch.class
+hibernate/queries/Queries.class
+DatabaseManager$4.class
 Main.class
 hibernate/model/Deck.class
 DatabaseManager$3.class
-DatabaseManager$1.class
 hibernate/model/Strategy.class
+DatabaseManager$1.class
 DatabaseManager.class
 DatabaseManager$2.class
-hibernate/model/Match.class
 hibernate/model/Result.class
+hibernate/model/Match.class

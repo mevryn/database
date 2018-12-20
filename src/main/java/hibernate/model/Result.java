@@ -5,7 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name="RESULT")
 public class Result {
-    @Id @GeneratedValue
+    @Id @GeneratedValue(generator = "gen")
+    @SequenceGenerator(name = "gen", sequenceName = "author_seq")
     @Column(name = "id")
     private int id;
     @Column(name = "Winner")
