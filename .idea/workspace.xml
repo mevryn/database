@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fafebc0-2651-4c6a-a5e6-30cf2044ac11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DecksInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/DecksInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DecksInput.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DecksInput.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatchesInput.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MatchesInput.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyforge-database.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/model/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/model/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate/model/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernate/model/Strategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/model/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/model/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/model/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/model/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/model/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/model/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/model/Strategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/model/Strategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate/queries/Queries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate/queries/Queries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DatabaseManagerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DatabaseManagerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -140,18 +117,22 @@
     <session id="-756221286">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="262" />
+          <entry key="java" value="337" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="262" />
+          <entry key="JAVA" value="337" />
+          <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -170,11 +151,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="233" column="55" lean-forward="true" selection-start-line="233" selection-start-column="55" selection-end-line="233" selection-end-column="55" />
+            <state relative-caret-position="270">
+              <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/queries/Queries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="210">
               <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -220,11 +201,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="434">
+              <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -251,7 +232,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="135">
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
@@ -260,7 +241,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="255">
               <caret line="24" column="35" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -325,8 +306,8 @@
         <option value="$PROJECT_DIR$/src/main/java/hibernate/model/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/hibernate/model/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/hibernate/model/Strategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DatabaseManager.java" />
       </list>
     </option>
   </component>
@@ -364,8 +345,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -440,13 +422,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545350012451" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545390949881" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -483,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseManagerTest.pageQuery">
+  <component name="RunManager" selected="JUnit.DatabaseManagerTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -499,22 +480,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseManagerTest.loadDecksFromJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseManagerTest.loadMatchesFromXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyforge-database" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DatabaseManagerTest" />
-      <option name="METHOD_NAME" value="loadDecksFromJSON" />
+      <option name="METHOD_NAME" value="loadMatchesFromXML" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseManagerTest.loadMatchesFromJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseManagerTest.loadPlayersFromXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyforge-database" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DatabaseManagerTest" />
-      <option name="METHOD_NAME" value="loadMatchesFromJSON" />
+      <option name="METHOD_NAME" value="loadPlayersFromXML" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -532,11 +513,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseManagerTest.saveMatchesToJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseManagerTest.saveMatchesToXML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="keyforge-database" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DatabaseManagerTest" />
-      <option name="METHOD_NAME" value="saveMatchesToJSON" />
+      <option name="METHOD_NAME" value="saveMatchesToXML" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -558,19 +539,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DatabaseManagerTest.loadDecksFromJSON" />
-      <item itemvalue="JUnit.DatabaseManagerTest.loadMatchesFromJSON" />
-      <item itemvalue="JUnit.DatabaseManagerTest" />
-      <item itemvalue="JUnit.DatabaseManagerTest.saveMatchesToJSON" />
       <item itemvalue="JUnit.DatabaseManagerTest.pageQuery" />
+      <item itemvalue="JUnit.DatabaseManagerTest.loadPlayersFromXML" />
+      <item itemvalue="JUnit.DatabaseManagerTest.saveMatchesToXML" />
+      <item itemvalue="JUnit.DatabaseManagerTest.loadMatchesFromXML" />
+      <item itemvalue="JUnit.DatabaseManagerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatabaseManagerTest.pageQuery" />
-        <item itemvalue="JUnit.DatabaseManagerTest.saveMatchesToJSON" />
-        <item itemvalue="JUnit.DatabaseManagerTest.loadMatchesFromJSON" />
         <item itemvalue="JUnit.DatabaseManagerTest" />
-        <item itemvalue="JUnit.DatabaseManagerTest.loadDecksFromJSON" />
+        <item itemvalue="JUnit.DatabaseManagerTest.loadMatchesFromXML" />
+        <item itemvalue="JUnit.DatabaseManagerTest.saveMatchesToXML" />
+        <item itemvalue="JUnit.DatabaseManagerTest.loadPlayersFromXML" />
+        <item itemvalue="JUnit.DatabaseManagerTest.pageQuery" />
       </list>
     </recent_temporary>
   </component>
@@ -587,38 +568,46 @@
       <workItem from="1544784691422" duration="6755000" />
       <workItem from="1544792024410" duration="1180000" />
     </task>
+    <task id="LOCAL-00001" summary="finished">
+      <created>1545350103289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545350103289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DatabaseManagerTest - 2018.12.21 at 00h 40m 33s.xml">
-      <configuration name="DatabaseManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest - 2018.12.21 at 00h 42m 19s.xml">
-      <configuration name="DatabaseManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest - 2018.12.21 at 00h 42m 42s.xml">
-      <configuration name="DatabaseManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest - 2018.12.21 at 00h 43m 48s.xml">
-      <configuration name="DatabaseManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest - 2018.12.21 at 00h 45m 31s.xml">
-      <configuration name="DatabaseManagerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest_loadMatchesFromJSON - 2018.12.21 at 00h 46m 05s.xml">
-      <configuration name="DatabaseManagerTest.loadMatchesFromJSON" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest_saveMatchesToJSON - 2018.12.21 at 00h 46m 26s.xml">
-      <configuration name="DatabaseManagerTest.saveMatchesToJSON" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest_saveMatchesToJSON - 2018.12.21 at 00h 46m 57s.xml">
-      <configuration name="DatabaseManagerTest.saveMatchesToJSON" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest_saveMatchesToJSON - 2018.12.21 at 00h 48m 44s.xml">
-      <configuration name="DatabaseManagerTest.saveMatchesToJSON" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseManagerTest_pageQuery - 2018.12.21 at 00h 48m 48s.xml">
+    <history-entry file="DatabaseManagerTest_pageQuery - 2018.12.21 at 00h 52m 30s.xml">
       <configuration name="DatabaseManagerTest.pageQuery" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_pageQuery - 2018.12.21 at 00h 53m 06s.xml">
+      <configuration name="DatabaseManagerTest.pageQuery" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_pageQuery - 2018.12.21 at 12h 07m 11s.xml">
+      <configuration name="DatabaseManagerTest.pageQuery" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_loadPlayersFromXML - 2018.12.21 at 12h 09m 02s.xml">
+      <configuration name="DatabaseManagerTest.loadPlayersFromXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_loadPlayersFromXML - 2018.12.21 at 12h 09m 10s.xml">
+      <configuration name="DatabaseManagerTest.loadPlayersFromXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_loadPlayersFromXML - 2018.12.21 at 12h 09m 23s.xml">
+      <configuration name="DatabaseManagerTest.loadPlayersFromXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_saveMatchesToXML - 2018.12.21 at 12h 12m 22s.xml">
+      <configuration name="DatabaseManagerTest.saveMatchesToXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_saveMatchesToXML - 2018.12.21 at 12h 14m 28s.xml">
+      <configuration name="DatabaseManagerTest.saveMatchesToXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_loadMatchesFromXML - 2018.12.21 at 12h 15m 21s.xml">
+      <configuration name="DatabaseManagerTest.loadMatchesFromXML" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseManagerTest_loadMatchesFromXML - 2018.12.21 at 12h 15m 31s.xml">
+      <configuration name="DatabaseManagerTest.loadMatchesFromXML" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -637,7 +626,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2728279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27614832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -647,14 +636,14 @@
       <window_info id="Persistence" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867885" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39849624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901832" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32864866" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -678,6 +667,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -695,7 +688,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DatabaseManager.java</url>
-          <line>202</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -707,19 +700,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DatabaseManager.java</url>
-          <line>224</line>
+          <line>228</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DatabaseManager.java</url>
-          <line>252</line>
+          <line>256</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java</url>
-          <line>90</line>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -835,11 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,9 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,6 +854,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/queries/Queries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Deck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -881,22 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MatchesInput.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MatchesInput.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/queries/Queries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -904,9 +883,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MatchesInput.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatchesInput.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Match.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="255">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -914,23 +906,6 @@
             <element signature="e#810#811#0" expanded="true" />
             <element signature="e#877#878#0" expanded="true" />
             <element signature="e#929#930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate/model/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="233" column="55" lean-forward="true" selection-start-line="233" selection-start-column="55" selection-end-line="233" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -947,8 +922,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DatabaseManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="434">
+          <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

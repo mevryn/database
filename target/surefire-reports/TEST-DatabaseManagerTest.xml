@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="DatabaseManagerTest" time="0.011" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.2.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="10.0.2+13"/>
+    <property name="sun.boot.library.path" value="/home/mev/Programy/jdk-10.0.2/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/mev/Programowanie/database"/>
+    <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/mev/Programowanie/database"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="10.0.2+13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/mev/Programy/idea-IC-182.4323.46/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="54.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-43-generic"/>
+    <property name="user.home" value="/home/mev"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="10"/>
+    <property name="user.name" value="mev"/>
+    <property name="java.class.path" value="/home/mev/Programy/idea-IC-182.4323.46/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="10"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.2.3 install"/>
+    <property name="java.home" value="/home/mev/Programy/jdk-10.0.2"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="10.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/mev/Programy/idea-IC-182.4323.46/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2018-07-17"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.3"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="DatabaseManagerTest" name="loadMatchesFromXML" time="0.011">
+    <error message="Unable to find hibernate.model.Result with id 2" type="javax.persistence.EntityNotFoundException">javax.persistence.EntityNotFoundException: Unable to find hibernate.model.Result with id 2
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:157)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:227)
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:278)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:121)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:89)
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1212)
+	at org.hibernate.internal.SessionImpl.internalLoad(SessionImpl.java:1095)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:632)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:424)
+	at org.hibernate.type.EntityType.replace(EntityType.java:323)
+	at org.hibernate.type.AbstractType.replace(AbstractType.java:144)
+	at org.hibernate.type.TypeHelper.replace(TypeHelper.java:211)
+	at org.hibernate.event.internal.DefaultMergeEventListener.copyValues(DefaultMergeEventListener.java:430)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:232)
+	at org.hibernate.event.internal.DefaultMergeEventListener.entityIsDetached(DefaultMergeEventListener.java:300)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:169)
+	at org.hibernate.event.internal.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:68)
+	at org.hibernate.internal.SessionImpl.fireMerge(SessionImpl.java:856)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:837)
+	at org.hibernate.internal.SessionImpl.merge(SessionImpl.java:842)
+	at DatabaseManager.loadMatchesFromXML(DatabaseManager.java:194)
+	at DatabaseManagerTest.loadMatchesFromXML(DatabaseManagerTest.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Hibernate: alter table DECK drop constraint FKieibn88di2ypr6jp79nyykm4b
+Hibernate: alter table DECK drop constraint FKbj5n98v5qlsnq4dog062k2xjn
+Hibernate: alter table MATCH drop constraint FK44muxrejxun6x075ptr83u4vu
+Hibernate: alter table MATCH drop constraint FKbia6b7fo3dqmn0nersvphhc48
+Hibernate: alter table MATCH drop constraint FKejah3vvsqh8h458s7vsnbxexc
+Hibernate: drop table if exists DECK cascade
+Hibernate: drop table if exists MATCH cascade
+Hibernate: drop table if exists PLAYER cascade
+Hibernate: drop table if exists RESULT cascade
+Hibernate: drop table if exists STRATEGY cascade
+Hibernate: drop sequence hibernate_sequence
+Hibernate: create sequence hibernate_sequence start 1 increment 1
+Hibernate: create table DECK (id int4 not null, nameofdeck varchar(255), owner_id int4, Strategy int4, primary key (id))
+Hibernate: create table MATCH (id int4 not null, date timestamp, parsedDateTime timestamp, opponent_id int4, player_id int4, result int4, primary key (id))
+Hibernate: create table PLAYER (id int4 not null, name varchar(255), surname varchar(255), primary key (id))
+Hibernate: create table RESULT (id int4 not null, Winner varchar(255), primary key (id))
+Hibernate: create table STRATEGY (id int4 not null, strategy varchar(255), primary key (id))
+Hibernate: alter table DECK add constraint FKieibn88di2ypr6jp79nyykm4b foreign key (owner_id) references PLAYER
+Hibernate: alter table DECK add constraint FKbj5n98v5qlsnq4dog062k2xjn foreign key (Strategy) references STRATEGY
+Hibernate: alter table MATCH add constraint FK44muxrejxun6x075ptr83u4vu foreign key (opponent_id) references PLAYER
+Hibernate: alter table MATCH add constraint FKbia6b7fo3dqmn0nersvphhc48 foreign key (player_id) references PLAYER
+Hibernate: alter table MATCH add constraint FKejah3vvsqh8h458s7vsnbxexc foreign key (result) references RESULT
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select player0_.id as id1_2_0_, player0_.name as name2_2_0_, player0_.surname as surname3_2_0_ from PLAYER player0_ where player0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: select result0_.id as id1_3_0_, result0_.Winner as Winner2_3_0_ from RESULT result0_ where result0_.id=?
+Hibernate: select nextval (&apos;hibernate_sequence&apos;)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into PLAYER (name, surname, id) values (?, ?, ?)
+Hibernate: insert into RESULT (Winner, id) values (?, ?)
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: update PLAYER set name=?, surname=? where id=?
+Hibernate: select match0_.id as id1_1_0_, match0_.date as date2_1_0_, match0_.opponent_id as opponent4_1_0_, match0_.parsedDateTime as parsedDa3_1_0_, match0_.player_id as player_i5_1_0_, match0_.result as result6_1_0_ from MATCH match0_ where match0_.id=?
+Hibernate: select result0_.id as id1_3_0_, result0_.Winner as Winner2_3_0_ from RESULT result0_ where result0_.id=?
+</system-out>
+    <system-err>log4j:WARN No appenders could be found for logger (org.jboss.logging).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+java.lang.IllegalStateException: Could not add argument to evaluated element
+Continuing ...
+</system-err>
+  </testcase>
+</testsuite>

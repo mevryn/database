@@ -99,21 +99,29 @@ public class DatabaseManagerTest {
         entityManager.getTransaction().commit();
         entityManager.close();
     }
- /*@Test
+      @Test
+    public void loadPlayersFromXML() throws Exception {
+        entityManager.getTransaction().begin();
+        manager.loadPlayersFromXML("PlayersInput.xml");
+        assertEquals(194, queries.findAllPlayers().size());
+        entityManager.getTransaction().commit();
+        entityManager.close();
+    }
+ @Test
     public void saveMatchesToXML() throws Exception {
         entityManager.getTransaction().begin();
         manager.loadMatchesFromXML("MatchesInput.xml");
         manager.saveMatchesToXML(queries.findAllMatches());
         entityManager.close();
     }
-*/
- /*   @Test
+
+    @Test
     public void loadMatchesFromXML() throws Exception {
         entityManager.getTransaction().begin();
         manager.loadMatchesFromXML("MatchesInput.xml");
-        assertEquals(6, queries.findAllMatches().size());
+        assertEquals(1, queries.findAllMatches().size());
         entityManager.getTransaction().commit();
         entityManager.close();
     }
-*/
+
 }

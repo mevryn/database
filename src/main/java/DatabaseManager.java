@@ -176,6 +176,10 @@ public class DatabaseManager {
         XMLDecoder decoder = new XMLDecoder(new BufferedInputStream(new FileInputStream(filePath)));
         List<PreparedMatch> preparedMatches = (List<PreparedMatch>) decoder.readObject();
         List<Match> matches = new ArrayList<>();
+         for(PreparedMatch preparedMatch: preparedMatches){
+            entityManager.merge(preparedMatch.getResult());
+        }
+        entityManager.flush();
         for (PreparedMatch preparedMatch : preparedMatches) {
             Match match = new Match();
             match.setId(preparedMatch.getId());
